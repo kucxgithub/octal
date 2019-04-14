@@ -6,8 +6,9 @@
  */
  
 Sample Implementation from Main:
-public static void main(String[] args) {
 
+	public static void main(String[] args) {
+		
 		Octal octal = new Octal();
 		System.out.printf("The decimal version of octal 350 is: %.0f\n\n",(octal.toDecimal("350"))); // 232
 		System.out.printf("The decimal version of octal 013 is: %.0f\n\n",(octal.toDecimal("013"))); // 11
