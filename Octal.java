@@ -1,3 +1,4 @@
+
 /**
  * Basic converter from Octal to Decimal.
  * @author Karen Urate
@@ -8,11 +9,11 @@ public class Octal {
 	public static void main(String[] args) {
 
 		Octal octal = new Octal();
-		System.out.printf("The octal of 350 is: %d\n\n",(int)(octal.toDecimal("350"))); // 232
-		System.out.printf("The octal of 013 is: %d\n\n",(int)(octal.toDecimal("013"))); // 11
-		System.out.printf("The octal of 117 is: %d\n\n",(int)(octal.toDecimal("117"))); // 79
-		System.out.printf("The octal of 377 is: %d\n\n",(int)(octal.toDecimal("377"))); // 255
-		System.out.printf("The octal of 010 is: %d\n\n",(int)(octal.toDecimal("010"))); // 8
+		System.out.printf("The decimal version of octal 350 is: %d\n\n",Math.round(octal.toDecimal("350"))); // 232
+		System.out.printf("The decimal version of octal 013 is: %d\n\n",Math.round(octal.toDecimal("013"))); // 11
+		System.out.printf("The decimal version of octal 117 is: %d\n\n",Math.round(octal.toDecimal("117"))); // 79
+		System.out.printf("The decimal version of octal 377 is: %d\n\n",Math.round(octal.toDecimal("377"))); // 255
+		System.out.printf("The decimal version of octal 010 is: %d\n\n",Math.round(octal.toDecimal("010"))); // 8
 		
 	}
 
@@ -28,7 +29,7 @@ public class Octal {
 		
 		for(int i = 1,j=counter-1; i<counter(octal); i++,j--) {
 			
-			double curr = (initial / Math.pow(10,j)) - ( (initial % Math.pow(10,j)) / Math.pow(10,j) ) ; 
+			double curr = (initial / Math.pow(10,j)) - ( (initial % Math.pow(10,j)) / Math.pow(10,j) ); 
 			decimal += ( curr * (Math.pow(8, j)) ); 
 			initial = initial % Math.pow(10,j); 
 			
