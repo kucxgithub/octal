@@ -4,7 +4,10 @@
  * @author Karen Urate
  * @since April 14, 2019
  */
- 
+
+For more details:
+http://karenurate.weebly.com/blog/octal-to-decimal
+
 Sample Implementation from Main:
 
 	public static void main(String[] args) {
